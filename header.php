@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php echo get_bloginfo('charset') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <?php if (is_search()) : ?>
+        <meta name="robots" content="noindex, nofollow" />
+    <?php endif; ?>
+
     <title>LoveToEat Home Page</title>
 
-    <link rel="stylesheet" href="<?php echo get_theme_file_uri('/css/style.css') ?>">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory') . '/css/style.css' ?>">
+
+    <link rel="pingback" href="<?php get_bloginfo('pingback_url'); ?>">
+
+    <?php wp_head() ?>
 </head>
 
-<body>
-
+<body <?php body_class() ?>>
     <header>
         <div class="pos-center">
-            <h1><a href="#">lovetoeat.pl</a></h1>
+            <h1><a href="<?php esc_url(home_url(home_url('/'))) ?>">lovetoeat.pl</a></h1>
 
             <nav id="main-nav">
                 <div>

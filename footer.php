@@ -41,11 +41,11 @@
         </section>
     </div>
 </footer>
-<script src="<?php echo get_theme_file_uri('/js/jquery-1.9.1.min.js') ?>"></script>
-<script src="<?php echo get_theme_file_uri('/js/jquery.carouFredSel-6.2.0.js') ?>"></script>
-<script src="<?php echo get_theme_file_uri('/js/jquery.jqtransform.js') ?>"></script>
-<script src="<?php echo get_theme_file_uri('/js/slides.jquery.js') ?>"></script>
-<script src="<?php echo get_theme_file_uri('/js/scripts.js') ?>"></script>
+<script src="<?php echo LOVETOEAT_THEME_URL ?>js/jquery-1.9.1.min.js"></script>
+<script src="<?php echo LOVETOEAT_THEME_URL ?>js/jquery.carouFredSel-6.2.0.js"></script>
+<script src="<?php echo LOVETOEAT_THEME_URL ?>js/jquery.jqtransform.js"></script>
+<script src="<?php echo LOVETOEAT_THEME_URL ?>js/slides.jquery.js"></script>
+<script src="<?php echo LOVETOEAT_THEME_URL ?>js/scripts.js"></script>
 </body>
 
 </html>
