@@ -10,3 +10,4 @@ if (!defined('LOVETOEAT_THEME_URL')) {
 }
 
 require_once(realpath(LOVETOEAT_THEME_DIR . 'libs/postTypes.php'));
+require_once(realpath(LOVETOEAT_THEME_DIR . 'libs/utils.php'));

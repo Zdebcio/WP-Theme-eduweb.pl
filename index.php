@@ -242,39 +242,30 @@
             <section class="container">
                 <span class="flyer">&uArr;</span>
 
-                <section class="first">
-                    <header>
-                        <small>Janusz w dniu 09.04.2013</small>
-                        Sałatka z chrupiącym [...]
-                    </header>
-                    <img alt='' src='content/avatar-janusz.png' />
-                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed magna orci, eget egestas tellus. Mauris id lectus lorem, et condimentum est.</blockquote>
-                </section>
+                <?php
 
+                $recent_comms = fetchRecentComments(3);
 
-                <section>
-                    <header>
-                        <small>Kasia w dniu 23.03.2013</small>
-                        Bagietka francuska
-                    </header>
-                    <img alt='' src='content/avatar-kasia.png' />
-                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed magna orci, eget egestas tellus. Mauris id lectus lorem, et condimentum est.</blockquote>
-                </section>
+                foreach ($recent_comms as $comment) :
+                    $date = new DateTime($comment->comment_date_gmt);
+                ?>
+                    <section>
+                        <header>
+                            <small><?php echo $comment->comment_author ?> w dniu <?php echo $date->format('d.m.y') ?></small>
+                            <?php echo cutText($comment->post_title, 27) ?>
+                        </header>
+                        <?php echo get_avatar($comment->user_id, 69) ?>
+                        <blockquote><?php echo $comment->comment_content ?></blockquote>
+                    </section>
 
-
-                <section class="last">
-                    <header>
-                        <small>Roman w dniu 23.03.2013</small>
-                        Schab po węgiersku
-                    </header>
-                    <img alt='' src='content/avatar-roman.png' />
-                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed magna orci, eget egestas tellus. Mauris id lectus lorem, et condimentum est.</blockquote>
-                </section>
-
-                <div class="clear"></div>
+                <?php
+                endforeach;
+                ?>
             </section>
-        </div>
+            <div class="clear"></div>
     </section>
+    </div>
+</section>
 </section>
 
 <?php get_footer();
