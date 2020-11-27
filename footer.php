@@ -1,43 +1,37 @@
-<footer>
+<footer class="boxes">
     <div class="pos-center">
-        <section class="menu">
+        <div class="flyer">&nbsp;</div>
+        <section class="spaghetti">
+            <h2>Przepisy i Dieta</h2>
             <ul>
-                <li><a href="#">Pomidor</a></li>
-                <li><a href="#">Pietruszka</a></li>
-                <li><a href="#">Makaron</a></li>
-                <li><a href="#">Warzywa</a></li>
-                <li><a href="#">Kurczak</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Kuchnia japońska</a></li>
-                <li><a href="#">Włoskie smaki</a></li>
-                <li><a href="#">Hiszpańskie tapas</a></li>
-                <li><a href="#">Kuchnia tajska</a></li>
-                <li><a href="#">Kuchnia francuska</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Lunch</a></li>
-                <li><a href="#">Przystawka</a></li>
-                <li><a href="#">śniadanie</a></li>
-                <li><a href="#">Obiad</a></li>
-                <li><a href="#">Deser</a></li>
+                <li><a href="#">Sałatka z chrupiącym indykiem</a></li>
+                <li><a href="#">Schab po węgiersku</a></li>
+                <li><a href="#">Sałatka z chrupiącym indykiem</a></li>
+                <li><a href="#">Bagietka francuska</a></li>
+                <li><a href="#">Zapiekanka krakowska</a></li>
             </ul>
         </section>
 
-        <section class="tag-cloud">
-            <a href='#' title='2 tematy' style='font-size: 16.5px;'>kurczak</a>
-            <a href='#' title='1 temat' style='font-size: 11px;'>makaron</a>
-            <a href='#' title='1 temat' style='font-size: 13px;'>pietruszka</a>
-            <a href='#' title='1 temat' style='font-size: 11px;'>pomidor</a>
-            <a href='#' title='2 tematy' style='font-size: 16.5px;'>sałata</a>
-            <a href='#' title='1 temat' style='font-size: 10px;'>warzywa</a>
-            <a href='#' title='1 temat' style='font-size: 13px;'>pietruszka</a>
-            <a href='#' title='2 tematy' style='font-size: 16.5px;'>kurczak</a>
-            <a href='#' title='1 temat' style='font-size: 11px;'>makaron</a>
-            <a href='#' title='1 temat' style='font-size: 11px;'>pomidor</a>
-            <a href='#' title='2 tematy' style='font-size: 16.5px;'>kurczak</a>
-            <a href='#' title='1 temat' style='font-size: 11px;'>makaron</a>
-            <a href='#' title='1 temat' style='font-size: 13px;'>pietruszka</a>
+        <section class="bread">
+            <h2>Food Fight</h2>
+            <ul>
+                <li><a href="#">Cheeseburger vs Hambuger</a></li>
+                <li><a href="#">Subway Panini vs Zapiekanka</a></li>
+                <li><a href="#">McChicken vs Tortilla Deluxe</a></li>
+                <li><a href="#">Cheeseburger vs Hambuger</a></li>
+                <li><a href="#">Subway Panini vs Zapiekanka</a></li>
+            </ul>
+        </section>
+
+        <section class="dinner last">
+            <h2>Restauracje</h2>
+            <ul>
+                <li><a href="#">Restauracja Da Pietro</a></li>
+                <li><a href="#">Miód Malina</a></li>
+                <li><a href="#">Trattoria Mamma Mia</a></li>
+                <li><a href="#">Pod Wawelem</a></li>
+                <li><a href="#">Trattoria Mamma Mia</a></li>
+            </ul>
         </section>
     </div>
 </footer>
