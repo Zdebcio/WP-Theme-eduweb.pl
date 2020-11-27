@@ -12,7 +12,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     */
-  font-family: 'SansationRegular';
+  font-family: 'Karla', sans-serif;
   font-size: 14px;
   line-height: 23px;
   color: #fff;
@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'MuseoSlab500Regular';
+  font-family: 'Roboto Slab', serif;
   font-weight: normal;
 }
 
@@ -264,7 +264,7 @@ a.nav.right:hover {
   border-radius: 50%;
   text-align: center;
   font-size: 220px;
-  font-family: 'MuseoSlab500Regular';
+  font-family: 'Roboto Slab', serif;
   border: 2px solid #fff;
   position: absolute;
 }
