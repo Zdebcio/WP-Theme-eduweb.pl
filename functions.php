@@ -12,7 +12,23 @@ if (!defined('LOVETOEAT_THEME_URL')) {
 require_once(realpath(LOVETOEAT_THEME_DIR . 'libs/postTypes.php'));
 require_once(realpath(LOVETOEAT_THEME_DIR . 'libs/utils.php'));
 
+add_theme_support('post-formats', ['gallery']);
+add_theme_support('post-thumbnails', ['post', 'recipes', 'restaurants', 'foodfight']);
+
 function printRestaurantCategories($post_id)
 {
     printPostCategories($post_id, ['cousine-type', 'city']);
+}
+
+function printRanking($post_id)
+{
+    $rate = (int)get_post_meta($post_id, 'ranking', true);
+
+    for ($i = 0; $i < 4; $i++) {
+        if ($i < $rate) {
+            echo '<li class="active"></li>';
+        } else {
+            echo '<li></li>';
+        }
+    }
 }

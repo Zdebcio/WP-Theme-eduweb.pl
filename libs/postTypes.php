@@ -27,6 +27,7 @@ function lovetoeat_init_postTypes()
         'capability_type' => 'post',
         'herarchical' => false,
         'menu_position' => 5,
+        'show_in_rest' => true,
         'supports' => [
             'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields'
         ],
@@ -61,6 +62,7 @@ function lovetoeat_init_postTypes()
         'capability_type' => 'post',
         'herarchical' => false,
         'menu_position' => 5,
+        'show_in_rest' => true,
         'supports' => [
             'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields', 'post-formats'
         ],
@@ -95,6 +97,7 @@ function lovetoeat_init_postTypes()
         'capability_type' => 'post',
         'herarchical' => false,
         'menu_position' => 5,
+        'show_in_rest' => true,
         'supports' => [
             'title', 'editor', 'author', 'thumbnail', 'custom-fields'
         ],
